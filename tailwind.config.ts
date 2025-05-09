@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				newsmate: {
+					blue: '#0EA5E9',
+					'light-blue': '#D3E4FD',
+					gray: '#F6F6F7',
+					'dark-gray': '#333333',
+					'message-user': '#E5DEFF',
+					'message-bot': '#F1F0FB'
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,18 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'typing': {
+					'0%': { width: '0px' },
+					'33%': { width: '8px' },
+					'66%': { width: '16px' },
+					'100%': { width: '24px' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'typing': 'typing 1.5s steps(3) infinite'
 			}
 		}
 	},
